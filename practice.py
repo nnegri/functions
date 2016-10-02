@@ -77,8 +77,7 @@ def say_hi(name):
 # 3. Write a function called 'print_product' that takes two integers and multiplies
 #    them together. Print the result.
 def print_product(num1, num2):
-    result = num1 * num2
-    print result
+    print num1 * num2
 
 # 4. Write a function called 'repeat_string' that takes a string and an integer and
 #    prints the string that many times
@@ -168,8 +167,8 @@ def full_title(name, title = 'Engineer'):
 #    Use the function from #1 to construct the full title for the letter's
 #    greeting.
 def write_letter(name, title, sender_name):
-    title = full_title(name, title)
-    print 'Dear %s, I think you are amazing! Sincerely, %s' % (title, sender_name)
+
+    print 'Dear %s, I think you are amazing! Sincerely, %s' % (full_title(name, title), sender_name)
 
 write_letter('Jane Hacks', 'Hacker', 'Balloonicorn')
 
